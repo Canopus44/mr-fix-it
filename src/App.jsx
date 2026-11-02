@@ -2,6 +2,7 @@ import Navbar from './components/Navbar.jsx';
 import Hero from './components/Hero.jsx';
 import Metrics from './components/Metrics.jsx';
 import About from './components/About.jsx';
+import MissionVision from './components/MissionVision.jsx';
 import Values from './components/Values.jsx';
 import Strategies from './components/Strategies.jsx';
 import OrgChart from './components/OrgChart.jsx';
@@ -22,6 +23,7 @@ export default function App() {
         <Hero />
         <Metrics />
         <About />
+        <MissionVision />
         <Values />
         <Strategies />
         <OrgChart />

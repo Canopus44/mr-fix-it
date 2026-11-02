@@ -5,6 +5,7 @@
 
 export const NAV_LINKS = [
   { label: 'Nosotros', href: '#nosotros' },
+  { label: 'Misión y visión', href: '#mision-vision' },
   { label: 'Valores', href: '#valores' },
   { label: 'Organigrama', href: '#organigrama' },
   { label: 'Gestión Humana', href: '#gestion-humana' },

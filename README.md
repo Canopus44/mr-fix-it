@@ -10,7 +10,7 @@ Landing page de **Mr. Fix-it**, servicio técnico de celulares en Medellín, Col
 
 - Hero a pantalla completa con teléfono en CSS/SVG, diagnóstico simulado, parallax y tilt 3D.
 - Contadores animados, reveal on scroll, navbar glass que se oculta al bajar y menú móvil.
-- Historia narrativa, misión, visión y objetivos en un bento grid.
+- Historia narrativa, sección propia de **Misión y visión** con el texto oficial y objetivos en un bento grid.
 - Valores y estrategias con tarjetas interactivas y programa de fidelización jugable.
 - Organigrama construido con código: datos en árbol, conectores SVG animados con `stroke-dasharray`, ramas colapsables, navegación por teclado y `role="tree"`.
 - Gestión humana con seis procesos en tabs accesibles.
@@ -58,6 +58,7 @@ mr-fix-it/
 │   │   ├── Hero.jsx
 │   │   ├── Metrics.jsx
 │   │   ├── About.jsx
+│   │   ├── MissionVision.jsx
 │   │   ├── Values.jsx
 │   │   ├── Strategies.jsx
 │   │   ├── OrgChart.jsx

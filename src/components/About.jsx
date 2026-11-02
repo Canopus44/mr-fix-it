@@ -67,32 +67,8 @@ export default function About() {
           </Reveal>
         </div>
 
-        <div className="about__purpose" aria-label="Misión, visión y objetivos">
-          <Reveal as="article" className="bento bento--mission" delay={40}>
-            <div className="bento__icon">
-              <Icon name="target" size={22} />
-            </div>
-            <p className="bento__label">Misión</p>
-            <h3>Calidad que se siente en cada detalle.</h3>
-            <p>{PURPOSE.mission}</p>
-            <span className="bento__number" aria-hidden="true">
-              01
-            </span>
-          </Reveal>
-
-          <Reveal as="article" className="bento bento--vision" delay={120}>
-            <div className="bento__icon">
-              <Icon name="eye" size={22} />
-            </div>
-            <p className="bento__label">Visión 2030</p>
-            <h3>Crecer sin perder el cuidado.</h3>
-            <p>{PURPOSE.vision}</p>
-            <span className="bento__number" aria-hidden="true">
-              02
-            </span>
-          </Reveal>
-
-          <Reveal as="article" className="bento bento--objective" delay={80}>
+        <div className="about__purpose" aria-label="Objetivo general y objetivos específicos">
+          <Reveal as="article" className="bento bento--objective" delay={40}>
             <div className="bento__icon">
               <Icon name="compass" size={22} />
             </div>
@@ -101,7 +77,7 @@ export default function About() {
             <p>{PURPOSE.objective}</p>
           </Reveal>
 
-          <Reveal as="article" className="bento bento--specific" delay={160}>
+          <Reveal as="article" className="bento bento--specific" delay={120}>
             <p className="bento__label">Objetivos específicos</p>
             <ul className="bento__list">
               {PURPOSE.specific.map((item, index) => (

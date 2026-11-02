@@ -1047,49 +1047,6 @@
   text-transform: uppercase;
 }
 
-.bento--mission {
-  grid-column: span 7;
-  color: var(--white);
-  background:
-    radial-gradient(circle at 95% 5%, rgba(229, 32, 46, 0.3), transparent 38%),
-    var(--black);
-}
-
-.bento--mission .bento__icon {
-  color: #ff8f96;
-  background: rgba(229, 32, 46, 0.15);
-}
-
-.bento--mission .bento__label {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.bento--mission p:last-of-type {
-  max-width: 600px;
-  color: rgba(255, 255, 255, 0.64);
-}
-
-.bento--vision {
-  grid-column: span 5;
-  color: var(--white);
-  background:
-    radial-gradient(circle at 10% 100%, rgba(255, 255, 255, 0.22), transparent 34%),
-    linear-gradient(135deg, #0a84ff, #0057b8);
-}
-
-.bento--vision .bento__icon {
-  color: #d9ecff;
-  background: rgba(255, 255, 255, 0.16);
-}
-
-.bento--vision .bento__label {
-  color: rgba(255, 255, 255, 0.66);
-}
-
-.bento--vision p:last-of-type {
-  color: rgba(255, 255, 255, 0.82);
-}
-
 .bento--objective {
   grid-column: span 7;
   background: var(--gray-light);
@@ -1146,20 +1103,212 @@
   padding-top: 2px;
 }
 
-.bento__number {
+/* ==========================================================================
+   MISIÓN Y VISIÓN
+   ========================================================================== */
+.mission-vision {
+  background: var(--gray-light);
+}
+
+.mission-vision__aura {
   position: absolute;
-  top: 18px;
-  right: 26px;
-  font-size: 4.6rem;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: -0.08em;
-  color: rgba(255, 255, 255, 0.06);
+  top: 8%;
+  right: -18%;
+  width: 58vw;
+  height: 58vw;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 40% 40%, rgba(10, 132, 255, 0.12), transparent 55%),
+    radial-gradient(circle at 70% 70%, rgba(229, 32, 46, 0.08), transparent 50%);
+  filter: blur(90px);
   pointer-events: none;
 }
 
-.bento--objective .bento__number {
-  color: rgba(10, 10, 11, 0.04);
+.mission-vision__grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  align-items: stretch;
+}
+
+.purpose-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 540px;
+  padding: clamp(28px, 4vw, 48px);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+
+.purpose-card--mission {
+  color: var(--white);
+  background:
+    radial-gradient(circle at 92% 4%, rgba(229, 32, 46, 0.3), transparent 38%),
+    radial-gradient(circle at 4% 100%, rgba(10, 132, 255, 0.12), transparent 38%),
+    var(--black);
+  box-shadow: var(--shadow-lg);
+}
+
+.purpose-card--vision {
+  border: 1px solid var(--line-light);
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(10, 132, 255, 0.12), transparent 40%),
+    radial-gradient(circle at 0% 100%, rgba(229, 32, 46, 0.045), transparent 32%),
+    var(--white);
+  box-shadow: var(--shadow-sm);
+}
+
+.purpose-card__top {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.purpose-card__index {
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.purpose-card--vision .purpose-card__index {
+  color: var(--muted-light);
+}
+
+.purpose-card__pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.055);
+  font-size: 0.53rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.62);
+  white-space: nowrap;
+}
+
+.purpose-card__pill--blue {
+  border-color: rgba(10, 132, 255, 0.18);
+  background: var(--blue-soft);
+  color: var(--blue-deep);
+}
+
+.purpose-card h3 {
+  position: relative;
+  z-index: 2;
+  margin-top: clamp(48px, 6vw, 78px);
+  font-size: clamp(2.9rem, 5.3vw, 4.9rem);
+  font-weight: 650;
+  line-height: 0.91;
+  letter-spacing: -0.07em;
+}
+
+.purpose-card__text {
+  position: relative;
+  z-index: 2;
+  max-width: 570px;
+  margin-top: 24px;
+  quotes: none;
+}
+
+.purpose-card__text p {
+  font-size: clamp(1.02rem, 1.55vw, 1.28rem);
+  font-weight: 450;
+  line-height: 1.58;
+  letter-spacing: -0.018em;
+  color: rgba(255, 255, 255, 0.66);
+}
+
+.purpose-card--vision .purpose-card__text p {
+  color: var(--ink);
+}
+
+.purpose-card__footer {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.purpose-card--vision .purpose-card__footer {
+  border-top-color: var(--line-light);
+}
+
+.purpose-card__icon {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: rgba(229, 32, 46, 0.13);
+  color: #ff858e;
+}
+
+.purpose-card--vision .purpose-card__icon {
+  background: var(--blue-soft);
+  color: var(--blue);
+}
+
+.purpose-card__footer > span:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 0.67rem;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.46);
+}
+
+.purpose-card--vision .purpose-card__footer > span:last-child {
+  color: var(--muted-light);
+}
+
+.purpose-card__footer strong {
+  font-size: 0.61rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.purpose-card--vision .purpose-card__footer strong {
+  color: var(--ink);
+}
+
+.purpose-card__watermark {
+  position: absolute;
+  right: -8px;
+  bottom: -58px;
+  z-index: 0;
+  font-size: clamp(13rem, 21vw, 20rem);
+  font-weight: 700;
+  line-height: 0.75;
+  letter-spacing: -0.08em;
+  color: rgba(255, 255, 255, 0.035);
+  pointer-events: none;
+  user-select: none;
+}
+
+.purpose-card--vision .purpose-card__watermark {
+  right: -6px;
+  bottom: -20px;
+  font-size: clamp(6rem, 10vw, 9.5rem);
+  color: rgba(10, 10, 11, 0.035);
 }
 
 /* ==========================================================================
@@ -2762,6 +2911,14 @@
     min-height: 360px;
   }
 
+  .mission-vision__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .purpose-card {
+    min-height: 0;
+  }
+
   .value-card-wrap,
   .value-card-wrap:nth-child(4),
   .value-card-wrap:nth-child(5) {
@@ -2865,6 +3022,14 @@
 }
 
 @media (max-width: 680px) {
+  .purpose-card {
+    padding: 26px;
+  }
+
+  .purpose-card h3 {
+    margin-top: 40px;
+  }
+
   .hero__proof {
     flex-wrap: wrap;
     gap: 10px;
