@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="red" cx="82%" cy="18%" r="60%">
+      <stop offset="0%" stop-color="#E5202E" stop-opacity=".38"/>
+      <stop offset="100%" stop-color="#E5202E" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blue" cx="12%" cy="88%" r="65%">
+      <stop offset="0%" stop-color="#0A84FF" stop-opacity=".38"/>
+      <stop offset="100%" stop-color="#0A84FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity=".16"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity=".03"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0A0A0B"/>
+  <rect width="1200" height="630" fill="url(#red)"/>
+  <rect width="1200" height="630" fill="url(#blue)"/>
+  <g opacity=".14" stroke="#fff">
+    <path d="M0 100h1200M0 200h1200M0 300h1200M0 400h1200M0 500h1200"/>
+    <path d="M100 0v630M300 0v630M500 0v630M700 0v630M900 0v630M1100 0v630"/>
+  </g>
+  <g transform="translate(88 76)">
+    <rect width="1024" height="478" rx="38" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".16"/>
+    <g transform="translate(58 58)">
+      <text fill="#0A84FF" font-family="Inter, -apple-system, Segoe UI, sans-serif" font-size="25" font-weight="700" letter-spacing="3">SERVICIO TÉCNICO · MEDELLÍN</text>
+      <text x="710" y="8" fill="#FFFFFF" font-family="Inter, -apple-system, Segoe UI, sans-serif" font-size="30" font-weight="800" letter-spacing="-2">Mr.<tspan fill="#0A84FF">FIX</tspan><tspan fill="#E5202E">-IT.</tspan></text>
+      <text y="100" fill="#FFFFFF" font-family="Inter, -apple-system, Segoe UI, sans-serif" font-size="76" font-weight="800" letter-spacing="-4">Tu celular,</text>
+      <text y="184" fill="#FFFFFF" font-family="Inter, -apple-system, Segoe UI, sans-serif" font-size="76" font-weight="800" letter-spacing="-4">en buenas manos<tspan fill="#E5202E">.</tspan></text>
+      <text y="252" fill="#A1A1A6" font-family="Inter, -apple-system, Segoe UI, sans-serif" font-size="28">Diagnóstico preciso · Reparación experta · Garantía real</text>
+      <g transform="translate(0 296)">
+        <rect width="238" height="58" rx="29" fill="#E5202E"/>
+        <text x="119" y="37" fill="#fff" text-anchor="middle" font-family="Inter, sans-serif" font-size="19" font-weight="600">Agendar diagnóstico</text>
+      </g>
+    </g>
+    <g transform="translate(780 208) rotate(8)">
+      <rect width="150" height="290" rx="30" fill="#1D1D1F" stroke="#fff" stroke-opacity=".2"/>
+      <rect x="10" y="12" width="130" height="266" rx="22" fill="#060607"/>
+      <rect x="50" y="24" width="50" height="12" rx="6" fill="#1D1D1F"/>
+      <rect x="26" y="56" width="98" height="7" rx="3.5" fill="#0A84FF"/>
+      <rect x="26" y="80" width="72" height="6" rx="3" fill="#3A3A3C"/>
+      <rect x="26" y="100" width="98" height="6" rx="3" fill="#3A3A3C"/>
+      <rect x="26" y="136" width="98" height="54" rx="12" fill="#0A84FF" fill-opacity=".12" stroke="#0A84FF" stroke-opacity=".3"/>
+      <text x="38" y="169" fill="#0A84FF" font-family="Inter, sans-serif" font-size="14" font-weight="600">Batería 87%</text>
+      <circle cx="75" cy="232" r="24" fill="none" stroke="#2C2C2E" stroke-width="5"/>
+      <path d="M75 208a24 24 0 0 1 17 41" fill="none" stroke="#E5202E" stroke-width="5" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>
