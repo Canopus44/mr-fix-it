@@ -15,6 +15,7 @@ Landing page de **Mr. Fix-it**, servicio técnico de celulares en Medellín, Col
 - Organigrama construido con código: datos en árbol, conectores SVG animados con `stroke-dasharray`, ramas colapsables, navegación por teclado y `role="tree"`.
 - Gestión humana con seis procesos en tabs accesibles.
 - Sección **Manuales y protocolos** con el contenido del código de vestimenta, el resumen de la presentación de Finanzas y control y botones al material original en Canva.
+- Sección **Inducción** con el documento completo incrustado en PDF y descarga del DOCX original.
 - Cultura FISH con tarjetas flip 3D y responsables por acción.
 - Mapa radial de inteligencias del equipo.
 - **Evaluación 270°** completa: wizard de 8 pasos, 25 preguntas, preguntas abiertas, plan de mejoramiento, cálculo ponderado, consolidación de tres fuentes, comparativo por competencia, brecha de percepción, descarga `.txt`, impresión/PDF y reinicio.
@@ -49,6 +50,9 @@ npm run preview
 mr-fix-it/
 ├── .github/workflows/deploy.yml   # Publicación automática en GitHub Pages
 ├── public/
+│   ├── docs/
+│   │   ├── INDUCCION-1.docx       # Documento original descargable
+│   │   └── INDUCCION-1.pdf        # Copia fiel para lectura en la web
 │   ├── favicon.svg
 │   ├── og-cover.svg
 │   └── og-cover.png               # Imagen Open Graph
@@ -65,6 +69,7 @@ mr-fix-it/
 │   │   ├── OrgChart.jsx
 │   │   ├── HRManagement.jsx
 │   │   ├── Manuals.jsx
+│   │   ├── InductionDocument.jsx
 │   │   ├── FishCulture.jsx
 │   │   ├── Intelligences.jsx
 │   │   ├── Evaluation270.jsx
@@ -179,7 +184,13 @@ La evaluación se guarda únicamente en el estado de React de `src/components/Ev
 - Procesos de gestión humana: `src/data/hrData.js`.
 - El correo `hola@mrfixit.co` y los enlaces sociales son valores de ejemplo. Actualízalos en `CONTACT` antes de publicar una versión comercial.
 
-### 7. Imagen Open Graph
+### 7. Documento de inducción
+
+- El archivo original está en `public/docs/INDUCCION-1.docx` y la versión para lectura es `public/docs/INDUCCION-1.pdf`.
+- Si actualizas el documento, reemplaza ambos archivos y actualiza el número de páginas en `INDUCTION_DOC`, dentro de `src/data/resourcesData.js`.
+- El componente que lo muestra es `src/components/InductionDocument.jsx`.
+
+### 8. Imagen Open Graph
 
 `public/og-cover.png` es la imagen que se comparte en redes. Si cambias el diseño, reemplázala manteniendo 1200 × 630 px y actualiza las rutas absolutas de `index.html` si cambia el dominio o el nombre del repositorio.
 

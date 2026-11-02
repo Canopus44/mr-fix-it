@@ -164,3 +164,11 @@ export const FINANCE_CONTROL = {
     },
   ],
 };
+
+export const INDUCTION_DOC = {
+  title: 'Inducción Mr. Fix-it',
+  pages: 16,
+  docxFile: 'INDUCCION-1.docx',
+  pdfFile: 'INDUCCION-1.pdf',
+  downloadName: 'Manual-de-induccion-Mr-Fix-it.docx',
+};

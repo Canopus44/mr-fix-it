@@ -7,6 +7,7 @@ import './styles/animations.css';
 import './styles/components.css';
 import './styles/sections.css';
 import './styles/manuals.css';
+import './styles/induction.css';
 import './styles/org.css';
 import './styles/evaluation.css';
 import './styles/print.css';

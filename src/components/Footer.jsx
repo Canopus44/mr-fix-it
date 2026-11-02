@@ -93,6 +93,9 @@ export default function Footer() {
                 <a href="#manuales">Manuales y protocolos</a>
               </li>
               <li>
+                <a href="#induccion">Inducción</a>
+              </li>
+              <li>
                 <a href="#inicio">Inicio</a>
               </li>
             </ul>
