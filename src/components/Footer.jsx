@@ -72,7 +72,7 @@ export default function Footer() {
         <div className="footer__main">
           <div className="footer__brand">
             <a href="#inicio">
-              <Logo variant="onDark" showTagline />
+              <Logo variant="onDark" layout="stacked" showTagline />
               <span className="visually-hidden">Volver al inicio</span>
             </a>
             <p>
