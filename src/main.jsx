@@ -6,6 +6,7 @@ import './styles/base.css';
 import './styles/animations.css';
 import './styles/components.css';
 import './styles/sections.css';
+import './styles/manuals.css';
 import './styles/org.css';
 import './styles/evaluation.css';
 import './styles/print.css';

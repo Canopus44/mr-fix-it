@@ -14,6 +14,7 @@ Landing page de **Mr. Fix-it**, servicio técnico de celulares en Medellín, Col
 - Valores y estrategias con tarjetas interactivas y programa de fidelización jugable.
 - Organigrama construido con código: datos en árbol, conectores SVG animados con `stroke-dasharray`, ramas colapsables, navegación por teclado y `role="tree"`.
 - Gestión humana con seis procesos en tabs accesibles.
+- Sección **Manuales y protocolos** con el contenido del código de vestimenta, el resumen de la presentación de Finanzas y control y botones al material original en Canva.
 - Cultura FISH con tarjetas flip 3D y responsables por acción.
 - Mapa radial de inteligencias del equipo.
 - **Evaluación 270°** completa: wizard de 8 pasos, 25 preguntas, preguntas abiertas, plan de mejoramiento, cálculo ponderado, consolidación de tres fuentes, comparativo por competencia, brecha de percepción, descarga `.txt`, impresión/PDF y reinicio.
@@ -63,6 +64,7 @@ mr-fix-it/
 │   │   ├── Strategies.jsx
 │   │   ├── OrgChart.jsx
 │   │   ├── HRManagement.jsx
+│   │   ├── Manuals.jsx
 │   │   ├── FishCulture.jsx
 │   │   ├── Intelligences.jsx
 │   │   ├── Evaluation270.jsx
@@ -71,6 +73,7 @@ mr-fix-it/
 │   │   ├── companyData.js         # Historia, valores, estrategias, FISH, contacto
 │   │   ├── orgData.js             # Árbol del organigrama y funciones
 │   │   ├── hrData.js              # Seis procesos de gestión humana
+│   │   ├── resourcesData.js       # Manuales de vestimenta y finanzas
 │   │   └── evaluationData.js      # Preguntas, escala, tipos y pesos
 │   ├── hooks/
 │   │   ├── useInView.js
@@ -164,13 +167,19 @@ La suma debe ser `1`. La lógica de promedios, renormalización cuando falta una
 
 La evaluación se guarda únicamente en el estado de React de `src/components/Evaluation270.jsx`. Al recargar se pierde, por diseño.
 
-### 5. Textos, contactos y redes
+### 5. Manuales y recursos internos
+
+- El contenido del código de vestimenta, el resumen de Finanzas y control y los enlaces de Canva están en `src/data/resourcesData.js`.
+- Los botones `Abrir manual en Canva` y `Abrir presentación en Canva` usan esos enlaces. Si cambias el material, actualiza `RESOURCE_LINKS`.
+- El contenido se muestra en acordeones nativos (`<details>`) para no saturar la landing y conservar la accesibilidad.
+
+### 6. Textos, contactos y redes
 
 - Textos generales, historia, valores, FISH, inteligencias y contacto: `src/data/companyData.js`.
 - Procesos de gestión humana: `src/data/hrData.js`.
 - El correo `hola@mrfixit.co` y los enlaces sociales son valores de ejemplo. Actualízalos en `CONTACT` antes de publicar una versión comercial.
 
-### 6. Imagen Open Graph
+### 7. Imagen Open Graph
 
 `public/og-cover.png` es la imagen que se comparte en redes. Si cambias el diseño, reemplázala manteniendo 1200 × 630 px y actualiza las rutas absolutas de `index.html` si cambia el dominio o el nombre del repositorio.
 

@@ -7,6 +7,7 @@ import Values from './components/Values.jsx';
 import Strategies from './components/Strategies.jsx';
 import OrgChart from './components/OrgChart.jsx';
 import HRManagement from './components/HRManagement.jsx';
+import Manuals from './components/Manuals.jsx';
 import FishCulture from './components/FishCulture.jsx';
 import Intelligences from './components/Intelligences.jsx';
 import Evaluation270 from './components/Evaluation270.jsx';
@@ -28,6 +29,7 @@ export default function App() {
         <Strategies />
         <OrgChart />
         <HRManagement />
+        <Manuals />
         <FishCulture />
         <Intelligences />
         <Evaluation270 />

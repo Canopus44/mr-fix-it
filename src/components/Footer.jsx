@@ -90,6 +90,9 @@ export default function Footer() {
                 </li>
               ))}
               <li>
+                <a href="#manuales">Manuales y protocolos</a>
+              </li>
+              <li>
                 <a href="#inicio">Inicio</a>
               </li>
             </ul>
